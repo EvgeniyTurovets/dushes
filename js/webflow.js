@@ -19558,5 +19558,19 @@ $(function(){
     $('.cart-order-select-inner-text').click(function(){
         let text = $(this).text()
         $(this).parent('div').prev('a').find('input').val(text)
+        $(this).parent('div').hide()
     })
+    $('.w-plus').click(function(){
+        let val = $(this).parent('div').prev('div').find('.count-value').text()
+        val = parseInt(val) + 1
+        $(this).parent('div').prev('div').find('.count-value').text(val)
+    })
+    $('.w-minus').click(function(){
+        let val = $(this).parent('div').next('div').find('.count-value').text()
+        if(val != 1){
+            val = parseInt(val) - 1
+        }
+        $(this).parent('div').next('div').find('.count-value').text(val)
+    })
+    
 })
