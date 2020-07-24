@@ -1882,43 +1882,51 @@ body {
 .tab{
   font-family: "Exo2", sans-serif;
   font-weight: bold;
-  margin: 0 3vw;
-  font-size: 1.8vw;
-  cursor: pointer;
+  margin: 0 2vw;
+  font-size: 16px;
   transition: 0.3s all;
+  display: block;
+  background-color: #e30148;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  border-bottom: 5px solid #c90140;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  cursor: pointer;
+  line-height: 1.1;
 }
 .tab.active{
   opacity: 0.8;
   pointer-events: none;
+  border-color: #e30148; 
 }
 .page__p-contacts.active{
   display: none;
 }
 @media(max-width: 991px){
-  .tab{
-    font-size: 17px;
-  }
   .tabs{
     margin: 6vw -2vw;
   }
 }
 @media(max-width: 767px){
   .tabs{
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 45px -2vw;
+    margin: 45px 0vw;
     margin-bottom: 20px
   }
   .tab{
+    margin: 0 2px;
     margin-bottom: 25px;
-    font-size: 20px;
-  }
-  .tab.active{
-    font-weight: 400;
+    padding: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
-@media(max-width: 374px){
+@media(max-width: 412px){
   .tab{
-    font-size: 16px;
+    font-size: 14px;
   }
 }
