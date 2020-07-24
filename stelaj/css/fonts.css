@@ -1,0 +1,35 @@
+/* font-family: "SFUIText-Bold" */
+@font-face {
+  font-family: "SFUIText";
+  src: url("../fonts/SFUI/SFUIText-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+/* font-family: "SFUIText-Regular" */
+@font-face {
+  font-family: "SFUIText";
+  src: url("../fonts/SFUI/SFUIText-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "SFUIDisplay-Regular.ttf" */
+@font-face {
+  font-family: "SFUIDisplay";
+  src: url("../fonts/SFUI/SFUIDisplay-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "Exo2-Bold.ttf" */
+@font-face {
+  font-family: "Exo2";
+  src: url("../fonts/Exo2/Exo2-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+/* font-family: "Exo2-Regular.ttf" */
+@font-face {
+  font-family: "Exo2";
+  src: url("../fonts/Exo2/Exo2-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}

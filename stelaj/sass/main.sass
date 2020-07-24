@@ -1,0 +1,1620 @@
+body
+  font-size: 0.92vw
+
+/* HEADER */
+
+/*25px - 1.3vw*/
+/*18px - 0.92vw*/
+/*20px - 1.05vw*/
+/*50px - 2.6vw*/
+/*30px - 1.58vw*/
+/*70px - 3.85vw*/
+/*14px - 0.73vw*/
+/*12px - 0.63vw*/
+/*90px - 4.7vw*/
+/*28px - 14vw*/
+/*40px - 3vw*/
+/*30px - 2vw*/
+/*55px - 3.6vw*/
+
+.header
+  min-height: 100vh
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  position: relative
+  color: #fff
+  padding-bottom: 6vw
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-wrap: wrap
+  &__line
+    position: relative
+    z-index: 2
+    padding-bottom: 1.092vw
+    padding-top: 2.65vw
+    margin-bottom: 11vw
+    width: 100%
+  &__h-logo
+  &__h-nav
+  &__h-phone
+    text-align: right
+    margin-bottom: -21px
+
+  &__banner
+    position: relative
+    z-index: 2
+    width: 100%
+  &__h-calculation
+  &__h-work
+
+.h-logo
+  font-family: "SFUIText", sans-serif
+  font-weight: bold
+  font-size: 1.3vw
+  color: #fff
+  &:hover
+    color: #fff
+    text-decoration: none
+
+.h-nav
+  font-size: 0
+  list-style: none
+  padding: 0
+  margin: 0
+  &__item
+    display: inline-block
+    padding-left: 1.3vw
+    padding-right: 1.3vw
+  &__link
+    font-size: 0.92vw
+    color: #fff
+    display: block
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    &:hover
+      text-decoration: none
+      color: #fff
+
+.h-phone
+  text-align: right
+  padding-left: 2.35vw
+  position: relative
+  display: inline-block
+  &::after
+    content: ''
+    display: block
+    width: 1.3vw
+    height: 1.3vw
+    background-image: url(../img/icons/h-phone.png)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: left center
+    position: absolute
+    left: 0
+    top: 0
+  &__number
+    font-size: 1.05vw
+    color: #fff
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    display: inline-block
+    &:hover
+      text-decoration: none
+      color: #fff
+  &__callback
+    display: inline-block
+    font-size: 0.92vw
+    color: #fff
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      height: 1px
+      background-color: #fff
+      z-index: 1
+      width: 100%
+      left: 0
+      right: 0
+      bottom: 1px
+      opacity: .6
+    &:hover
+      color: #fff
+      text-decoration: none
+      &::after
+        background-color: transparent
+
+.h-calculation
+  &__title
+    font-family: "Exo2", sans-serif
+    font-weight: bold
+    font-size: 2.6vw
+    display: block
+    width: 100%
+    margin-bottom: 2.6vw
+  &__list
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 3.6vw
+  &__item
+    width: 50%
+    padding-left: 1.58vw
+    position: relative
+    display: block
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    font-size: 1.3vw
+    padding-right: 1.58vw
+    &::before
+      content: ''
+      width: .5vw
+      height: .5vw
+      background-color: #e30148
+      border-radius: 50%
+      position: absolute
+      left: 1px
+      top: .55vw
+  &__btn
+    display: inline-block
+    padding-left: 2.6vw
+    padding-right: 4.7vw
+    padding-top: 1.4vw
+    padding-bottom: 1.4vw
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    font-size: 1.05vw
+    color: #000
+    background-color: #fccb2e
+    border-bottom: 0.26vw solid #9c7518
+    border-radius: 3vw
+    position: relative
+    -webkit-box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    -moz-box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    &::after
+      content: ''
+      width: 1.9vw
+      height: auto
+      background-repeat: no-repeat
+      background-position: right center
+      background-size: contain
+      background-image: url(../img/icons/check-banner.png)
+      display: block
+      position: absolute
+      right: 1.05vw
+      top: 1.05vw
+      bottom: 1.05vw
+      z-index: 1
+    &:hover
+      text-decoration: none
+      color: #000
+      opacity: .7
+
+.h-work
+  &__ur
+    background-image: url(../img/bg-h-plash.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: left center
+    display: block
+    width: 100%
+    max-width: 17vw
+    padding: 1.5vw 3.4vw
+    position: relative
+    margin-left: auto
+    &::before
+      content: ''
+      display: block
+      background-image: url(../img/icons/backpack.png)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: contain
+      width: 2vw
+      height: 1.5vw
+      position: absolute
+      left: -1.1vw
+      top: 50%
+      margin-top: -.8vw
+      z-index: 1
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: 0.468vw
+      right: 0.468vw
+      bottom: 0.468vw
+      left: 0.468vw
+      width: auto
+      height: auto
+      border-top: 1px dashed #614f42
+      border-right: 1px dashed #614f42
+      border-bottom: 1px dashed #614f42
+  &__urborder
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: 0.468vw
+      left: 0.468vw
+      width: auto
+      height: auto
+      border-left: 1px dashed #614f42
+      width: 1px
+      height: 1.924vw
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      bottom: 0.468vw
+      left: 0.468vw
+      width: auto
+      height: auto
+      border-left: 1px dashed #614f42
+      width: 1px
+      height: 1.924vw
+  &__urtitle
+    font-size: 1.3vw
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    color: #242121
+
+  &__fiz
+    text-align: right
+    margin-top: 1.5vw
+    display: block
+  &__fiztitle
+    display: inline-block
+    position: relative
+    padding-left: 1.823vw
+    font-size: 1.05vw
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    &::before
+      content: ''
+      background-image: url(../img/icons/fiz-plus.png)
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center center
+      width: 1.146vw
+      height: 1.146vw
+      position: absolute
+      left: 0
+      top: 1px
+
+  &__garant
+    margin-top: 6vw
+    width: 22vw
+    background-color: #fff
+    padding: 1.4vw 2.1vw
+    margin-left: auto
+    text-align: center
+    position: relative
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: .55vw
+      right: .55vw
+      bottom: .55vw
+      left: .55vw
+      width: auto
+      height: auto
+      border: 1px dashed #d3b487
+  &__garanttitle
+    font-size: 1.58vw
+    display: inline-block
+    color: #000
+    font-family: "Exo2", sans-serif
+    font-weight: normal
+    padding-left: 1.04vw
+    margin-left: -1.04vw
+    position: relative
+    &::before
+      content: ''
+      display: block
+      width: .5vw
+      height: .5vw
+      background-color: #e30148
+      border-radius: 50%
+      position: absolute
+      left: 0
+      top: .9vw
+      z-index: 1
+  &__garantdescription
+    text-align: left
+    display: block
+    width: 100%
+    margin-top: .5vw
+    font-size: 0.92vw
+    color: #000
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+
+.page
+  background-color: #faf9f4
+  &__section
+    position: relative
+    .container
+      position: relative
+      z-index: 2
+    &-1
+      padding-top: 7vw
+      padding-bottom: 6vw
+      &-img-1
+        width: 146px
+        height: 103px
+        position: absolute
+        left: 0
+        top: 55%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-2
+        width: 101px
+        height: 92px
+        position: absolute
+        left: 54%
+        top: 86.5%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-3
+        width: 151px
+        height: 177px
+        position: absolute
+        right: 0
+        top: 9%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      .col-lg-4
+        padding-left: 0.26vw
+        padding-right: 0.26vw
+      .row
+        margin-left: -0.26vw
+        margin-right: -0.26vw
+    &-2
+      padding-top: 3vw
+      padding-bottom: 6vw
+      overflow: hidden
+      .col-lg-4
+        padding-left: 0.26vw
+        padding-right: 0.26vw
+      .row
+        margin-left: -0.26vw
+        margin-right: -0.26vw
+      &-img-1
+        width: 109px
+        height: 81px
+        position: absolute
+        top: 43%
+        left: 88%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-2
+        width: 64px
+        height: 2.6vw
+        position: absolute
+        bottom: 3%
+        left: 62.2%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+    &-3
+      padding-top: 3vw
+      padding-bottom: 6vw
+      position: relative
+      z-index: 2
+      .col-lg-4
+        padding-left: 0.26vw
+        padding-right: 0.26vw
+      .row
+        margin-left: -0.26vw
+        margin-right: -0.26vw
+      &-img-1
+        width: 7.28vw
+        height: 166px
+        position: absolute
+        left: 0
+        top: 8%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-2
+        width: 73px
+        height: 77px
+        position: absolute
+        left: 3%
+        bottom: 23%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-3
+        width: 108px
+        height: 83px
+        position: absolute
+        right: 6%
+        top: 35%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-4
+        width: 22.88vw
+        height: 16.744vw
+        position: absolute
+        bottom: -4.16vw
+        right: 2%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+    &-4
+      position: relative
+      z-index: 1
+      padding-bottom: 6vw
+      .col-lg-4
+        padding-left: 0.26vw
+        padding-right: 0.26vw
+      .col-lg-8
+        padding-left: 0.26vw
+        padding-right: 0.26vw
+      .row
+        margin-left: -0.26vw
+        margin-right: -0.26vw
+    &-5
+      padding-top: 4.16vw
+      padding-bottom: 6vw
+      .row
+        margin-left: -25px
+        margin-right: -25px
+        z-index: 2
+      .col-lg-6
+        padding-left: 1.3vw
+        padding-right: 1.3vw
+      &-img-1
+        width: 57px
+        height: 77px
+        display: block
+        position: absolute
+        left: 120px
+        top: 34%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-2
+        width: 42px
+        height: 2.35vw
+        position: absolute
+        right: 2.65vw
+        top: 6%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+    &-6
+      padding-top: 2.392vw
+      .slick-slider
+        position: relative
+        z-index: 2
+      &-img-1
+        width: 3.6vw
+        height: 56px
+        position: absolute
+        left: 23.5vw
+        top: 72%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+    &-7
+      padding-top: 12.532vw
+      padding-bottom: 255px
+      position: relative
+      .col-lg-8
+        padding-left: 0.26vw
+        padding-right: 0.26vw
+      .row
+        margin-left: -0.26vw
+        margin-right: -0.26vw
+      .header__h-calculation
+        position: relative
+        z-index: 2
+      .h-calculation__item::before
+        background-color: #fccb2e
+      .h-calculation__btn
+        background-color: #e30148
+        border-color: #c90140
+        color: #fff
+        &::after
+          background-image: url(../img/icons/check-banner-wt.png)
+      &-img-1
+        width: 2.392vw
+        height: 2.35vw
+        position: absolute
+        top: -1.146vw
+        left: 60%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-2
+        width: 38.636vw
+        height: 26.312vw
+        display: block
+        right: 3.016vw
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        -webkit-transform: translateY(-50%)
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-3
+        position: absolute
+        left: 0
+        bottom: 0.416vw
+        width: 8.684vw
+        height: 24.388vw
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+    &-8
+      padding-top: 7.28vw
+      &-img-1
+        display: block
+        width: 136px
+        height: 166px
+        position: absolute
+        right: 0
+        top: 27%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-2
+        width: 170px
+        height: 242px
+        display: block
+        position: absolute
+        left: 0
+        top: 81%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+    &-9
+      padding-top: 3.85vw
+      margin-bottom: 152px
+      &-img-1
+        display: block
+        width: 61px
+        height: 76px
+        position: absolute
+        left: 25vw
+        top: 23%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-2
+        width: 42px
+        height: 2.35vw
+        display: block
+        position: absolute
+        right: 5vw
+        top: 87%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+    &-10
+      padding-top: 85px
+      &-img-1
+        display: block
+        width: 242px
+        height: 114px
+        position: absolute
+        right: 0
+        top: -28px
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+    &-11
+      padding-top: 7.28vw
+      margin-bottom: 3.12vw
+    &-12
+      padding-top: 3vw
+      &-img-1
+        width: 22.88vw
+        height: 16.744vw
+        position: absolute
+        bottom: 2px
+        right: 2%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+      &-img-2
+        width: 196px
+        height: 106px
+        display: block
+        position: absolute
+        left: -155px
+        top: 40%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+
+  &__p-title
+    padding-left: 0.416vw
+    padding-right: 0.416vw
+  &__p-choose
+    padding-top: .5vw
+    overflow: hidden
+  &__p-product
+    padding-top: .5vw
+  &__p-easemess
+  &__p-calculation
+  &__p-why
+  &__p-projects
+    margin-top: 103px
+    margin-bottom: 152px
+  &__p-sertificates
+    text-align: center
+    width: 100%
+    padding-top: 4.16vw
+  &__p-quetion
+    margin-top: 3vw
+  &__p-man
+    margin-top: 2.6vw
+  &__p-quesform
+    margin-top: 2.6vw
+    text-align: right
+  &__p-clients
+    margin-top: 1.58vw
+  &__p-contacts
+    margin-top: 4.992vw
+
+.p-man
+  height: 37vw
+  display: block
+
+.row-section-1
+  margin-top: 5.304vw
+  position: relative
+  z-index: 1
+  padding-left: .9vw
+  padding-right: .9vw
+.row-section-2
+  position: relative
+  z-index: 1
+  padding-left: .9vw
+  padding-right: .9vw
+  margin-top: 4.7vw
+.row-section-4
+  z-index: 1
+  padding-left: .9vw
+  padding-right: .9vw
+
+.row-section-2
+  padding-left: .9vw
+  padding-right: .9vw
+
+.p-title
+  display: block
+  width: 100%
+  font-size: 2.6vw
+  color: #000
+  font-family: "Exo2", sans-serif
+  font-weight: bold
+  &-center
+    text-align: center
+  &-left
+    text-align: left
+
+.p-choose
+  background-color: #d3b487
+  padding: .9vw 2vw
+  min-height: 17.784vw
+  position: relative
+  &-big
+    min-height: 36.088vw
+  &__number
+    font-family: "Exo2", sans-serif
+    font-weight: normal
+    font-size: 3.85vw
+    color: #fff
+    opacity: .4
+    display: block
+    width: 100%
+  &__title
+    font-size: 1.58vw
+    color: #444242
+    font-family: "Exo2", sans-serif
+    font-weight: bold
+    display: block
+    width: 100%
+    margin-top: 34px
+  &__description
+    color: #444242
+    display: block
+    width: 100%
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    margin-top: 0.92vw
+  &__img
+    display: block
+    position: absolute
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center center
+    &-1
+      width: 11.596vw
+      height: 9.672vw
+      right: 0.26vw
+      top: -0.468vw
+      position: absolute
+    &-2
+      width: 6.708vw
+      height: 16.328vw
+      bottom: 0
+      left: 100%
+      margin-left: -2.6vw
+    &-3
+      width: 18.46vw
+      height: 27.092vw
+      right: -31px
+      bottom: 0
+    &-4
+      width: 12.376vw
+      height: 17.88vw
+      right: -4.888vw
+      bottom: -5.824vw
+      position: absolute
+    &-5
+      width: 13.52vw
+      height: 6.76vw
+      right: 0px
+      top: .55vw
+      position: absolute
+
+.p-product
+  padding-top: 3vw
+  padding-bottom: 2.6vw
+  padding-left: 1.58vw
+  padding-right: 1.58vw
+  background-color: #fff
+  -webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.15)
+  -moz-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.15)
+  box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.15)
+  &-dw
+    background-color: transparent
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+    position: relative
+  &__title
+    display: block
+    width: 100%
+    text-align: center
+    font-size: 1.58vw
+    color: #000
+    font-family: "Exo2", sans-serif
+    font-weight: bold
+  &__img
+    width: 11.96vw
+    height: 12.532vw
+    margin-left: auto
+    margin-right: auto
+    display: block
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: contain
+    margin-top: 1.58vw
+    &-dw
+      width: 28.444vw
+      height: 17.88vw
+      position: absolute
+      left: 4.16vw
+      top: 3.588vw
+      margin-top: 0
+  &__description
+    display: block
+    width: 100%
+    margin-top: 1.58vw
+    font-size: 0.92vw
+    color: #000
+    font-family: "SFUIText", sans-serif
+    font-weight: bold
+    text-align: center
+    &-dw
+      margin-top: 16.172vw
+      font-weight: normal
+  &__price
+    display: block
+    text-align: center
+    margin-top: 1.05vw
+    font-size: 1.3vw
+    color: #000
+    font-family: "Exo2", sans-serif
+    font-weight: normal
+    &-old
+      position: relative
+      &::after
+        content: ''
+        height: 2px
+        left: 0
+        right: 0
+        position: absolute
+        width: 100%
+        top: 60%
+        background-color: #000
+        opacity: .6
+    &-new
+      font-size: 1.58vw
+      color: #000
+      font-family: "Exo2", sans-serif
+      font-weight: bold
+  &__bottom
+    margin-top: 2.6vw
+    display: block
+    text-align: center
+    &-dw
+      margin-top: 1.976vw
+  &__btn
+    display: inline-block
+    padding-left: 2.6vw
+    padding-right: 5.044vw
+    background-color: #e30148
+    color: #fff
+    text-align: center
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    font-size: 1.05vw
+    padding-top: 1.4vw
+    padding-bottom: 1.4vw
+    border-radius: 3vw
+    border-bottom: 0.26vw solid #c90140
+    -webkit-box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    -moz-box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    position: relative
+    &::after
+      content: ''
+      display: block
+      background-image: url(../img/icons/calc.png)
+      width: 2.1vw
+      height: 2.392vw
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: contain
+      z-index: 1
+      position: absolute
+      right: 1.58vw
+      top: 50%
+      margin-top: -1.196vw
+    &:hover
+      text-decoration: none
+      color: #fff
+      opacity: .7
+    &-dw
+      background-color: #fccb2e
+      border-color: #936e16
+      color: #000
+      padding-right: 4.7vw
+      &::after
+        background-image: url(../img/icons/dw.png)
+        width: 2.236vw
+        height: 1.9vw
+        margin-top: -1.066vw
+        right: 1.146vw
+      &:hover
+        color: #000
+
+.p-easemess
+  background-color: #d3b487
+  padding: 64px 2.6vw 64px 2.6vw
+  position: relative
+  min-height: 33.8vw
+  -webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.15)
+  -moz-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.15)
+  box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.15)
+  &__title
+    color: #444242
+    font-size: 1.58vw
+    font-family: "Exo2", sans-serif
+    font-weight: bold
+    display: block
+    width: 100%
+  &__description
+    display: block
+    width: 100%
+    font-size: 0.92vw
+    color: #444242
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    margin-top: 1.05vw
+    position: relative
+  &__icon
+    position: absolute
+    width: 3.85vw
+    height: 3.85vw
+    z-index: 1
+    left: 10.92vw
+    top: -2.288vw
+    display: block
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center center
+  &__img
+    &-1
+      width: 16.952vw
+      height: 22.36vw
+      position: absolute
+      left: -13px
+      z-index: 1
+      bottom: 0
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center center
+    &-2
+      width: 6.084vw
+      height: 7.644vw
+      position: absolute
+      right: 0
+      bottom: 0
+      background-position: 0 0
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center center
+
+.p-calculation
+  background-color: #fff
+  padding-left: 3.85vw
+  padding-right: 52px
+  padding-top: 65px
+  min-height: 33.8vw
+  position: relative
+  -webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.15)
+  -moz-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.15)
+  box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.15)
+  &__title
+    display: block
+    text-align: left
+    font-size: 3vw
+    color: #000
+    font-family: "Exo2", sans-serif
+    font-weight: bold
+  &__wrapper
+    margin-top: 85px
+    .row
+      margin-left: -2.288vw
+      margin-right: -2.288vw
+    .col-md-6
+      padding-left: 2.1vw
+      padding-right: 2.1vw
+  &__row
+    margin-bottom: 1.58vw
+  &__input
+    display: block
+    width: 100%
+    padding-left: 1.58vw
+    padding-right: 1.58vw
+    border: 1px solid #979797
+    font-size: 0.92vw
+    color: #000
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    padding-top: 1.4vw
+    padding-bottom: 1.4vw
+    border-radius: 3vw
+    background-color: #faf9f4
+    outline: none
+  &__bottom
+  &__btn
+    border: none
+    display: block
+    width: 100%
+    text-align: center
+    padding-left: 2.6vw
+    padding-right: 4.7vw
+    padding-top: 1.4vw
+    padding-bottom: 1.4vw
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    font-size: 1.05vw
+    color: #000
+    background-color: #fccb2e
+    border-bottom: 0.26vw solid #9c7518
+    border-radius: 3vw
+    position: relative
+    -webkit-box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    -moz-box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    &::after
+      content: ''
+      width: 2.35vw
+      height: 2.028vw
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: contain
+      background-image: url(../img/icons/pointer.png)
+      display: block
+      position: absolute
+      right: 1.924vw
+      top: 50%
+      margin-top: -1.014vw
+      z-index: 1
+    &:hover
+      text-decoration: none
+      color: #000
+      opacity: .7
+  &__sogl
+    margin-top: 1.05vw
+  &__sogllb
+    padding-left: 1.146vw
+    width: 100%
+    max-width: 11.648vw
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    display: block
+    font-size:0.63vw
+    color: #747474
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    cursor: pointer
+    &::before
+      content: ''
+      display: block
+      width:0.63vw
+      height:0.63vw
+      border: 1px solid #535353
+      position: absolute
+      left: 0
+      top: 0
+    &::after
+      content: ''
+      width: 15px
+      height: 13px
+      background-image: url(../img/icons/check.png)
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center center
+      position: absolute
+      left: 0
+      top: -4px
+      z-index: 1
+      display: none
+  &__soglinput
+    display: none
+    &:checked + .p-calculation__sogllb:after
+      display: block
+  &__textarea
+    display: block
+    width: 100%
+    padding-left: 1.58vw
+    padding-right: 1.58vw
+    border: 1px solid #979797
+    font-size: 0.92vw
+    color: #000
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    padding-top: 1.4vw
+    padding-bottom: 1.4vw
+    border-radius: 0
+    background-color: #faf9f4
+    height: 9.776vw
+    resize: none
+    outline: none
+  &__texnik
+    margin-top: -16px
+  &__texniklb
+    font-size: 0.73vw
+    color: #000
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    padding-left: 1.823vw
+    cursor: pointer
+    position: relative
+    &::before
+      content: ''
+      width: 1.3vw
+      height:0.63vw
+      border-radius: 6px
+      background-color: #979797
+      position: absolute
+      left: 0
+      top: 3px
+    &::after
+      content: ''
+      height: .5vw
+      width: .5vw
+      border-radius: 50%
+      display: block
+      position: absolute
+      top: 4px
+      left: 1px
+      background-color: #fff
+  &__texnikinput
+    display: none
+    &:checked + .p-calculation__texniklb:after
+      left: 0.73vw
+    &:checked + .p-calculation__texniklb:before
+      background-color: #e30148
+  &__img
+    width: 19.24vw
+    height: 18.2vw
+    display: block
+    position: absolute
+    bottom: -7.54vw
+    right: 57px
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 0 0
+
+.p-why
+  &__item
+    position: relative
+    background-color: #fff
+    padding-left: 6.76vw
+    padding-top: 1.5vw
+    padding-bottom: 2.496vw
+    padding-right: 3.85vw
+    -webkit-box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    -moz-box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+    margin-top: 1.58vw
+    &::before
+      content: ''
+      display: block
+      width: 2.652vw
+      height: 2.6vw
+      background-image: url(../img/icons/why.png)
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center center
+      top: 1.924vw
+      left: 1.5vw
+      position: absolute
+  &__title
+    display: block
+    color: #000
+    font-size: 1.58vw
+    font-family: "Exo2", sans-serif
+    font-weight: bold
+  &__description
+    font-size: 0.92vw
+    color: #000
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    display: block
+    width: 100%
+    margin-top: .5vw
+  &__img
+    background-position: 0 0
+    background-repeat: no-repeat
+    position: absolute
+    &-1
+      right: 0
+      bottom: 0
+      height: 72px
+      width: 107px
+    &-2
+      right: 0
+      top:0.63vw
+      height: 105px
+      width: 93px
+    &-3
+      right: 0
+      bottom: 6px
+      height: 4.472vw
+      width: 73px
+    &-4
+      right: 0
+      bottom: 0
+      height: 7.54vw
+      width: 3.224vw
+    &-5
+      right: 0.92vw
+      bottom: 0
+      height: 4.888vw
+      width: 146px
+    &-6
+      right: 1.05vw
+      bottom: 0
+      height: 95px
+      width: 131px
+
+.p-projects
+  &__item
+    padding-left: 2.6vw
+    padding-right: 2.6vw
+  &__link
+    padding-top: 60%
+    display: block
+    width: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+
+.p-sertificates
+  display: inline-block
+  position: relative
+  &__img
+    display: block
+    width: 41.236vw
+  &__zoom
+    width: 3.6vw
+    height: 3.6vw
+    background-color: #fccb2e
+    border-radius: 50%
+    border-bottom: 3px solid #846314
+    display: block
+    position: absolute
+    &::after
+      content: ''
+      width: 24px
+      height: 24px
+      background-image: url(../img/icons/loop.png)
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center center
+      position: absolute
+      left: 50%
+      margin-left: -12px
+      top: 50%
+      margin-top: -12px
+      z-index: 1
+    &-1
+      top: 10.4vw
+      left: 10.4vw
+    &-2
+      top: 16.536vw
+      right: 11.752vw
+
+.p-quetion
+  &__item
+    display: block
+    background-color: #fff
+    padding-right: 144px
+    padding-left: 3vw
+    padding-top: 34px
+    padding-bottom: 15px
+    position: relative
+    margin-top: 2.6vw
+  &__title
+    color: #000
+    font-size: 1.3vw
+    font-family: "Exo2", sans-serif
+    font-weight: normal
+  &__description
+    display: block
+    margin-top: .5vw
+    color: #444242
+    font-size: 0.92vw
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+  &__description.clos
+    opacity: 0
+  &__icon
+    width: 3vw
+    height: 3vw
+    border-radius: 50%
+    background-color: #d3b487
+    position: absolute
+    top: 1.58vw
+    right: 1.58vw
+    &::after
+      content: ''
+      display: block
+      background-image: url(../img/icons/arrow-top.png)
+      width: 0.92vw
+      height: .5vw
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center center
+      position: absolute
+      top: 50%
+      margin-top: -0.26vw
+      left: 50%
+      margin-left: -0.468vw
+  &__icon.clos
+    transform: rotate(-180deg)
+    -webkit-transform: rotate(-180deg)
+
+.p-quesform
+  max-width: 26vw
+  width: 100%
+  padding-left: 75px
+  padding-right: 75px
+  padding-top: 3.85vw
+  padding-bottom: 1.664vw
+  position: relative
+  background-color: #fff
+  display: inline-block
+  margin-bottom: 4.472vw
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    width: auto
+    height: auto
+    top: 0.73vw
+    right: 0.73vw
+    bottom: 0.73vw
+    left: 0.73vw
+    border: 1px solid #e2cdaf
+  &__wrapper
+    position: relative
+    z-index: 2
+  &__img
+    width: 3.432vw
+    height: 3.432vw
+    display: block
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center center
+    position: absolute
+    left: -1.56vw
+    top: 1.404vw
+    z-index: 3
+  &__title
+    color: #444242
+    font-size: 1.58vw
+    font-family: "Exo2", sans-serif
+    font-weight: bold
+    display: block
+    width: 100%
+    text-align: center
+    margin-bottom: 2.392vw
+  .p-calculation__texnik
+    margin-top: 0
+
+.p-clients
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  align-items: center
+  &__item
+    width: 20%
+    height: 4.7vw
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 1.05vw
+  &__img
+    display: block
+
+.p-contacts
+  display: block
+  width: 100%
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  height: 36.816vw
+  -webkit-box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+  -moz-box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+  box-shadow: 0px 4px 0.26vw 0px rgba(0,0,0,0.15)
+  position: relative
+  &__wrapper
+    background-color: #fff
+    max-width: 20.8vw
+    position: absolute
+    z-index: 2
+    left: 6.084vw
+    top: 50%
+    transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+    padding-left: 2.548vw
+    padding-top: 3.224vw
+    padding-right: 2.6vw
+    padding-bottom: 3.12vw
+    &::after
+      content: ''
+      position: absolute
+      top: .5vw
+      right: .5vw
+      bottom: .5vw
+      left: .5vw
+      border: 1px solid #d3b487
+  &__fwrap
+    position: relative
+    z-index: 3
+  &__title
+    font-size: 1.58vw
+    color: #000
+    font-family: "Exo2", sans-serif
+    font-weight: bold
+    display: block
+    width: 100%
+    margin-bottom: 1.3vw
+  &__subtitle
+    color: #000
+    font-size: 1.3vw
+    font-family: "SFUIDisplay", sans-serif
+    font-weight: normal
+    display: block
+    width: 100%
+  &__value
+    display: block
+    margin-top: .5vw
+    margin-bottom: 1.05vw
+    font-size: .9vw
+    font-family: "SFUIDisplay", sans-serif
+    font-weight: normal
+  &__us
+    font-size: 1.3vw
+    color: #000
+    font-family: "SFUIDisplay", sans-serif
+    font-weight: normal
+    display: inline-block
+    padding-right: 2.392vw
+    position: relative
+    &::after
+      content: ''
+      width: 1.3vw
+      height: 1.3vw
+      background-image: url(../img/icons/phone-yel.png)
+      background-repeat: no-repeat
+      background-position: center center
+      display: block
+      position: absolute
+      right: 0
+      top: 50%
+      margin-top: -0.65vw
+    &:hover
+      color: #000
+      text-decoration: none
+
+.footer
+  padding-bottom: 3.4vw
+  padding-top: 87px
+
+.f-logo
+  font-family: "SFUIText", sans-serif
+  font-weight: bold
+  font-size: 1.3vw
+  color: #000
+
+.f-addr
+  color: #000
+  font-family: "SFUIText", sans-serif
+  font-weight: normal
+  font-size: 0.92vw
+  padding-left: 1.5vw
+  position: relative
+  &::after
+    content: ''
+    width: 0.884vw
+    height: 1.04vw
+    position: absolute
+    left: 0
+    top: 50%
+    margin-top: -0.494vw
+    background-image: url(../img/icons/geo.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: contain
+
+.f-phone
+  color: #000
+  font-family: "SFUIText", sans-serif
+  font-weight: normal
+  font-size: 0.92vw
+  padding-left: 1.5vw
+  position: relative
+  &::after
+    content: ''
+    width: 0.92vw
+    height: 0.92vw
+    position: absolute
+    left: 0
+    top: 50%
+    margin-top: -0.468vw
+    background-image: url(../img/icons/f-phone.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: contain
+
+.f-email
+  color: #000
+  font-family: "SFUIText", sans-serif
+  font-weight: normal
+  font-size: 0.92vw
+  padding-left: 2vw
+  position: relative
+  &::after
+    content: ''
+    width: 1.092vw
+    height: .9vw
+    position: absolute
+    left: 0
+    top: 50%
+    margin-top: -0.416vw
+    background-image: url(../img/icons/mail.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: contain
+
+
+.f-copy
+  color: #000
+  font-family: "SFUIText", sans-serif
+  font-weight: normal
+  font-size: 0.92vw
+  margin-top: 24px
+
+.p-modal
+  overflow: visible
+  .p-quesform
+    padding-bottom: 3.12vw
+  .p-quesform__title
+    width: auto
+    margin-left: -20px
+    margin-right: -20px
+  &-1
+    &-img-1
+      width: 12.376vw
+      height: 95px
+      display: block
+      position: absolute
+      left: -73px
+      bottom: -48px
+      z-index: 1
+  &-2
+    &-img-1
+      display: block
+      width: 192px
+      height: 199px
+      position: absolute
+      left: -88px
+      bottom: -68px
+      z-index: 1
+    &-img-2
+      display: block
+      width: 2.35vw
+      height: 2.1vw
+      position: absolute
+      right: -1.146vw
+      top: 150px
+
+
+.ok-modal
+  width: 100%
+  padding-left: 15px
+  padding-right: 15px
+  padding-top: 1.58vw
+  padding-bottom: 1.58vw
+  position: relative
+  background-color: #d3b487
+  display: block
+  &__top
+    text-align: center
+    img
+      display: inline-block
+  &__title
+    font-size: 1.58vw
+    color: #000
+    font-family: "Exo2", sans-serif
+    font-weight: bold
+    display: block
+    width: 100%
+    text-align: center
+  &__subtitle
+    display: block
+    width: 100%
+    text-align: center
+    font-size: 1.05vw
+    color: #000
+    font-family: "Exo2", sans-serif
+    font-weight: normal
+  &__description
+    display: block
+    color: #444242
+    font-size: 0.92vw
+    font-family: "SFUIText", sans-serif
+    font-weight: normal
+    text-align: center
+    margin-top: .5vw

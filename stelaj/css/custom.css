@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*Сброс*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small,
+strike, strong, sub, sup, tt, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, nav, output, ruby, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button, button:active, button:focus,
+input, input:active, input:focus {
+  outline: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  transition: all 1s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
+
+.p-projects .p-projects__wrapper {
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+
+.p-projects .slick-center .p-projects__wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.p-projects .p-projects__wrapper .p-projects__link {
+  padding-top: 50%;
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+}
+
+.p-projects .slick-center .p-projects__wrapper .p-projects__link {
+  padding-top: 60%;
+}
+
+.slick-arrow {
+  font-size: 0;
+  width: 4.68vw;
+  height: 4.68vw;
+  background-color: #e30148;
+  border-radius: 50%;
+  border: 0.52vw solid #faf9f4;
+  position: absolute;
+  top: 50%;
+  margin-top: -2.08vw;
+  z-index: 9;
+}
+.slick-arrow::after {
+  content: "";
+  background-image: url(../img/icons/arrow-sl.png);
+  width: 1.144vw;
+  height: 2.08vw;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.04vw;
+}
+
+.slick-prev {
+  left: 25%;
+}
+.slick-prev::after {
+  left: 1.092vw;
+}
+
+.slick-next {
+  right: 25%;
+}
+.slick-next::after {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  right: 1.092vw;
+}
+
+.p-modal {
+  padding: 0;
+  max-width: 26.104vw;
+}
+.p-modal .p-quesform {
+  margin-bottom: 0;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  top: 0.728vw;
+  right: 0.728vw;
+  width: 3.12vw;
+  height: 3.12vw;
+}
+
+#modal-ok {
+  max-width: 19.5vw;
+}
+
+#modal-ok .fancybox-close-small {
+  display: none;
+}
+
+.fancybox-button svg {
+  color: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
