@@ -70,34 +70,34 @@
 .menu-item a{
     text-decoration: none;
 }
-.w-layout-grid.hits-grid{
+/* .w-layout-grid.hits-grid{
     display: flex;
     flex-wrap: wrap
-}
-.top-hit-container{
+} */
+/* .top-hit-container{
     width: calc(100% / 2 - 10px)
-}
+} */
 .main-screen{
     height: auto;
     overflow: hidden;
 }
 @media(max-width: 767px){
-    .top-hit-container{
+    /* .top-hit-container{
         width: 100%
-    }
+    } */
 }
-.bottom-hit-container{
+/* .bottom-hit-container{
     width: calc(100% / 3 - 14px)
-}
+} */
 @media(max-width: 767px){
-    .bottom-hit-container{
+    /* .bottom-hit-container{
         width: calc(100% / 2 - 14px)
-    }
+    } */
 }
 @media(max-width: 559px){
-    .bottom-hit-container{
+    /* .bottom-hit-container{
         width: 100%;
-    }
+    } */
 }
 .cart-order-select-inner-_sub-select .select-close-icon{
     display: none
@@ -132,3 +132,119 @@
 .up-down-arrow.visible-arrow{
     bottom: 2%!important;
 }
+.slide-item{
+    height: 500px;
+    background-size: cover;
+    display: block;
+    cursor: pointer;
+}
+.smartslider{
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: -10px;;
+}
+.slide-type-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.slide-type-right{
+    margin-left: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.slide-type-left img, .slide-type-right img{
+    margin-bottom: 20px;
+}
+.line-img{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.line-img span{
+    width: 102px;
+    position: relative;
+    height: 2px;
+    background-color: #c12d00;
+}
+.line-img img{
+    margin-bottom: 0;
+}
+.line-img span:first-child{
+    left: -20px;
+}
+.line-img span:last-child{
+    right: -20px;
+}
+.slide-item a{
+    background: #c12d00;
+    padding: 5px 20px 5px 20px;
+    box-shadow: none;
+    border-width: 0;
+    border-style: solid;
+    border-color: #000;
+    border-color: RGBA(0,0,0,1);
+    border-radius: 5px;
+    transition: 0.3s all;
+    text-decoration: none;
+    color: #ffffff;
+}
+.slide-item a:hover{
+    background: #000;
+}
+
+@-webkit-keyframes bounceInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+    }
+  
+    50% {
+      opacity: 1;
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  
+  
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+      transform: translateY(100px);
+    }
+  
+    50% {
+      opacity: 1;
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .bounceInUp {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+  }

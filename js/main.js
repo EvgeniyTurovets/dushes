@@ -146,4 +146,25 @@ $(function () {
             $('.js-cart-icon').removeClass('additem')
         }, 200);
     })
+
+    var smartslider = new Swiper('.smartslider', {
+        slidesPerView: 1,
+        effect: 'fade',
+        spaceBetween: 0,
+        loop: !0,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+    
+    var wow = new WOW({
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true,        // default
+        resetAnimation: true
+    });
+    wow.init();
 })
