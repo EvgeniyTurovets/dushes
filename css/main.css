@@ -70,34 +70,44 @@
 .menu-item a{
     text-decoration: none;
 }
-/* .w-layout-grid.hits-grid{
+.hits-grids{
     display: flex;
     flex-wrap: wrap
-} */
-/* .top-hit-container{
-    width: calc(100% / 2 - 10px)
-} */
+}
+.top-hit-container{
+    width: calc(100% / 2 - 20px);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
 .main-screen{
     height: auto;
     overflow: hidden;
 }
 @media(max-width: 767px){
-    /* .top-hit-container{
-        width: 100%
-    } */
+    .top-hit-container{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
-/* .bottom-hit-container{
-    width: calc(100% / 3 - 14px)
-} */
+.bottom-hit-container{
+    width: calc(100% / 3 - 20px);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
 @media(max-width: 767px){
-    /* .bottom-hit-container{
-        width: calc(100% / 2 - 14px)
-    } */
+    .bottom-hit-container{
+        width: calc(100% / 2 - 20px)
+    }
 }
 @media(max-width: 559px){
-    /* .bottom-hit-container{
+    .bottom-hit-container{
         width: 100%;
-    } */
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 .cart-order-select-inner-_sub-select .select-close-icon{
     display: none
