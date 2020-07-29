@@ -146,25 +146,30 @@ $(function () {
             $('.js-cart-icon').removeClass('additem')
         }, 200);
     })
-
+   
     var smartslider = new Swiper('.smartslider', {
         slidesPerView: 1,
         effect: 'fade',
+        speed: 1000,
+        updateOnWindowResize: true,
         spaceBetween: 0,
         loop: !0,
+        autoplay: {
+            delay: 7000,
+          },
+        preventClicksPropagation: true,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next1',
+            prevEl: '.swiper-button-prev1',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
         }
     });
-    
-    var wow = new WOW({
-        boxClass:     'wow',      // default
-        animateClass: 'animated', // default
-        offset:       0,          // default
-        mobile:       true,       // default
-        live:         true,        // default
-        resetAnimation: true
-    });
-    wow.init();
+    // $(window).resize(function(){
+    //     smartslider.reInit()
+    // })
+    $('.preload').fadeOut()
 })
